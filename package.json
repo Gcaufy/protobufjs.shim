@@ -1,6 +1,6 @@
 {
   "name": "protobufjs.shim",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shims for protobufjs",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "verpub": "^0.1.4"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "protobufjs.shim@1.0.0",
+  "_id": "protobufjs.shim@1.0.1",
   "verpub": {
     "publish": {
       "client": "npm"
@@ -37,5 +37,6 @@
   },
   "dependencies": {
     "protobufjs": "^6.10.2"
-  }
+  },
+  "_commitid": "d17fb2e"
 }
