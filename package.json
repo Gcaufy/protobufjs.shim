@@ -1,0 +1,41 @@
+{
+  "name": "protobufjs.shim",
+  "version": "1.0.0",
+  "description": "Shims for protobufjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "release": "./node_modules/.bin/verpub publish",
+    "release:dry": "./node_modules/.bin/verpub --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gcaufy/protobufjs.shim.git"
+  },
+  "keywords": [
+    "protobufjs"
+  ],
+  "author": {
+    "name": "Gcaufy"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gcaufy/protobufjs.shim/issues"
+  },
+  "homepage": "https://github.com/Gcaufy/protobufjs.shim#readme",
+  "devDependencies": {
+    "jest": "^27.0.0-next.1",
+    "verpub": "^0.1.4"
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "protobufjs.shim@1.0.0",
+  "verpub": {
+    "publish": {
+      "client": "npm"
+    },
+    "tag": "{name}@{version}"
+  },
+  "dependencies": {
+    "protobufjs": "^6.10.2"
+  }
+}
