@@ -28,6 +28,34 @@ var object = AwesomeMessage.toObject(message, {
 });
 ```
 
+
+### mapusearray
+```
+/**
+message Config {
+  optional uint32         field               = 1;
+  optional int32          type                = 2;
+}
+
+message Message {
+  map<uint32, Config> config = 1;
+  optional string     label = 2;
+}
+*/
+
+
+require('protobufjs.shim/mapusearray/');
+
+// use array as map
+Message.encode({
+  config: [{ key: 123, value: { field: 1, type: 2}}]
+});
+// equal use object
+Mesage.encode({
+  config: { 123: { field: 1, type: 2 }}
+})
+```
+
 ## Test
 
 ```
