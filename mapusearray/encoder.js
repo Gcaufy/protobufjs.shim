@@ -53,7 +53,7 @@ function encoder(mtype) {
             if (wireType === undefined) gen
             ("types[%i].encode(item.value,w.uint32(18).fork()).ldelim().ldelim()", index); // can't be groups
             else gen
-            (".uint32(%i).%s(item.value).ldelim()", 16 | wireType, type, ref);
+            (".uint32(%i).%s(item.value).ldelim()", 16 | wireType, type);
           gen("})")
         ("} else {")
       ("for(var ks=Object.keys(%s),i=0;i<ks.length;++i){", ref)
